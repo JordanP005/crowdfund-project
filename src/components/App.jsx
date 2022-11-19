@@ -43,7 +43,7 @@ function App() {
   };
 
   const bookstylePhone = {
-    backgroundColor: "#DFDFDF",
+    backgroundColor: "transparent",
     width: "4rem",
     height: "4rem",
     border: "0px",
