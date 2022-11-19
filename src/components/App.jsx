@@ -301,13 +301,13 @@ function App() {
             </div>
             <div className="box-3-box">
               <div className="box-3-b-title">
-                <p className="box-3-b-name">Bamboo Stand</p>
-                <p className="box-3-b-cost">Pledge $25 or more</p>
+                <p className="box-3-b-name">Black Edition Stand</p>
+                <p className="box-3-b-cost">Pledge $75 or more</p>
               </div>
               <div className="box-3-b-text">
-                You get an ergonomic stand made of natural bamboo. You've helped
-                us launch our promotional campaign,and you'll be added to a
-                specail Backer member list.
+                You get a Black Special Edition computer stand and a personal
+                thank you. You'll be added to our Backer member list. Shipping
+                is included.
               </div>
               <div className="box-3-b-end">
                 <div className="box-3-b-counter">
@@ -319,13 +319,13 @@ function App() {
             </div>
             <div className="box-3-box">
               <div className="box-3-b-title">
-                <p className="box-3-b-name">Bamboo Stand</p>
-                <p className="box-3-b-cost">Pledge $25 or more</p>
+                <p className="box-3-b-name">Mahogany Special Edition</p>
+                <p className="box-3-b-cost">Pledge $200 or more</p>
               </div>
               <div className="box-3-b-text">
-                You get an ergonomic stand made of natural bamboo. You've helped
-                us launch our promotional campaign,and you'll be added to a
-                specail Backer member list.
+                You get two Special Edition Mahogany stands,a Backer T-shirt,
+                and a personal thank you. You'll be added to our Backer member
+                list. Shippin is included.
               </div>
               <div className="box-3-b-end">
                 <div className="box-3-b-counter">
