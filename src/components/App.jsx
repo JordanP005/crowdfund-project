@@ -10,13 +10,13 @@ function App() {
   const [left, setLeft] = React.useState([101, 64, 0]);
   const [thankState, setThankState] = React.useState(false);
 
-  function setModalA() {
+  function setModalA(event) {
     setModalAstate((prevValue) => !prevValue);
   }
 
   const bookstyle = {
     backgroundColor: "#DFDFDF",
-    width: "16rem",
+    width: "fit-content",
     height: "5rem",
     border: "0px",
     borderRadius: "40px",
@@ -26,11 +26,12 @@ function App() {
     fontWeight: "700",
     fontSize: "1.2rem",
     color: "rgb(20 123 116)",
+    paddingRight: "5rem",
   };
 
   const bookstyleSmall = {
     backgroundColor: "#DFDFDF",
-    width: "12rem",
+    width: "fit-content",
     height: "4rem",
     border: "0px",
     borderRadius: "40px",
@@ -40,6 +41,7 @@ function App() {
     fontWeight: "700",
     fontSize: "1rem",
     color: "rgb(20 123 116)",
+    paddingRight: "4rem",
   };
 
   const bookstylePhone = {
@@ -132,6 +134,16 @@ function App() {
     setBurgerState((prevValue) => !prevValue);
   }
 
+  const [anyStateBoo, setAnyStateBoo] = React.useState([false, false, false]);
+
+  function anyState(event) {
+    setAnyStateBoo((prevValue) => {
+      prevValue.map((state, idx) =>
+        idx === event.target.id - 1 ? true : state
+      );
+    });
+  }
+
   function Burger() {
     return (
       <div className="modal-burger-overlay">
@@ -183,6 +195,7 @@ function App() {
           setBackers={setBackers}
           setLeft={setLeft}
           setThankState={setThankState}
+          anyState={anyStateBoo}
         />
       ) : null}
       {thankState ? <Thank setThankState={setThankState} /> : null}
@@ -296,7 +309,9 @@ function App() {
                   <h1>{left[0]}</h1>
                   <p>left</p>
                 </div>
-                <button onClick={setModalA}>select reward</button>
+                <button onClick={setModalA} name="bottom-box" id={1}>
+                  select reward
+                </button>
               </div>
             </div>
             <div className="box-3-box">
@@ -314,7 +329,9 @@ function App() {
                   <h1>{left[1]}</h1>
                   <p>left</p>
                 </div>
-                <button onClick={setModalA}>select reward</button>
+                <button onClick={setModalA} name="bottom-box" id={2}>
+                  select reward
+                </button>
               </div>
             </div>
             <div className="box-3-box">
@@ -332,7 +349,9 @@ function App() {
                   <h1>{left[2]}</h1>
                   <p>left</p>
                 </div>
-                <button onClick={setModalA}>select reward</button>
+                <button onClick={setModalA} name="bottom-box" id={3}>
+                  select reward
+                </button>
               </div>
             </div>
           </div>

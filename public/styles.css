@@ -80,7 +80,7 @@ br {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: 230vh;
+  height: 270vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -174,9 +174,10 @@ nav {
 
 .button-bookmark {
   background-color: rgb(180, 180, 180);
-  width: 16rem;
+  width: fit-content;
   height: 5rem;
   border: 0px;
+  padding-right: 10%;
   border-radius: 60px;
   display: flex;
   flex-direction: row;
@@ -201,7 +202,7 @@ nav {
   background-size: 100% 100%;
   background-position: center;
   margin-left: -25%;
-  margin-top: -8%;
+  margin-top: -2%;
   height: 5rem;
   width: 5rem;
 }
@@ -268,7 +269,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  row-gap: 3%;
+  row-gap: 1rem;
 }
 
 .box-3-text {
@@ -524,11 +525,13 @@ nav {
   height: 60%;
   width: 3rem;
   font-weight: 700;
+  border: none;
 }
 
 .pledge-a-div input:focus {
   outline: none;
   font-weight: 700;
+  caret-color: var(--darkcyan);
 }
 
 .pledge-a-submit {
@@ -607,14 +610,15 @@ nav {
   }
 
   .button-bookmark {
-    width: 12rem;
+    width: fit-content;
     height: 4rem;
-    column-gap: 0;
+    padding-right: 4rem;
   }
 
   .book-img {
     width: 4rem;
     height: 4rem;
+    margin-top: -4%;
   }
 
   .box-1-text {

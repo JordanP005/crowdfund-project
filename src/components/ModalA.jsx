@@ -3,18 +3,18 @@ import Thank from "./Thank";
 
 function ModalA(props) {
   const left = props.left;
-  const [newState, setNewState] = useState("");
+  const [currentPledge, setcurrentPledge] = useState("");
 
   function handleChange(event) {
-    setNewState(event.target.value);
+    setcurrentPledge(event.target.value);
     event.preventDefault();
   }
 
   function handleSubmit(event) {
-    console.log(newState);
+    console.log(currentPledge);
 
     props.setMoneyState(
-      (prevValue) => parseInt(prevValue) + parseInt(newState)
+      (prevValue) => parseInt(prevValue) + parseInt(currentPledge)
     );
     props.setBackers((prevValue) => parseInt(prevValue) + parseInt(1));
     event.preventDefault();
@@ -57,7 +57,7 @@ function ModalA(props) {
           onSubmit={
             props.id === 1
               ? handle1Sub
-              : newState < props.min
+              : currentPledge < props.min
               ? handleerr
               : handleSubmit
           }
@@ -69,7 +69,7 @@ function ModalA(props) {
                 type="number"
                 min={props.min}
                 placeholder={props.min}
-                value={newState}
+                value={currentPledge}
                 autoFocus="autoFocus"
                 onChange={handleChange}
               ></input>
